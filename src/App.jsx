@@ -2,47 +2,47 @@ import './App.css'
 
 const skills = [
   'JavaScript',
-  'React',
-  'TypeScript',
-  'Node.js',
-  'Express',
   'HTML5',
   'CSS3',
-  'Git & GitHub',
-  'REST APIs',
+  'React',
+  'Node.js',
+  'Express',
   'SQL',
+  'Database Design',
+  'REST APIs',
+  'Git & GitHub',
   'Responsive Design',
-  'UI/UX Basics',
+  'Problem Solving',
 ]
 
 const projects = [
   {
-    title: 'Portfolio Website',
+    title: 'KHALLOUFI FARES',
     description:
-      'A modern personal portfolio designed to showcase projects, skills, and professional experience in a clean, high-impact layout.',
+      'A personal portfolio website showcasing my development skills, projects, contact information, and professional profile in a modern digital format.',
     stack: ['React', 'Vite', 'CSS'],
-    link: '#',
+    link: 'https://github.com/f-khalloufi/portfolio',
   },
   {
     title: 'Task Manager App',
     description:
-      'A productivity app for creating, updating, and organizing tasks with a simple dashboard experience and clear task flow.',
+      'A productivity web app for managing tasks, organizing priorities, and tracking progress in a clean, user-friendly dashboard.',
     stack: ['React', 'Node.js', 'MongoDB'],
-    link: '#',
+    link: 'https://github.com/f-khalloufi',
   },
   {
     title: 'E-Commerce Dashboard',
     description:
-      'A full-stack storefront dashboard with product management, order tracking, and a clean analytics-focused interface.',
-    stack: ['React', 'Express', 'PostgreSQL'],
-    link: '#',
+      'A storefront portal for product management, orders, and analytics, created to demonstrate full-stack development abilities.',
+    stack: ['React', 'Express', 'SQL'],
+    link: 'https://github.com/f-khalloufi',
   },
   {
     title: 'Real-Time Chat App',
     description:
-      'A communication platform built to demonstrate live messaging, user interaction, and smooth front-end to back-end data flow.',
+      'A messaging application designed to highlight client-server real-time communication and interactive user experience.',
     stack: ['React', 'Socket.io', 'Node.js'],
-    link: '#',
+    link: 'https://github.com/f-khalloufi',
   },
 ]
 
@@ -50,7 +50,7 @@ function App() {
   return (
     <div className="page-shell">
       <header className="topbar">
-        <div className="brand">F-Khalloufi</div>
+        <div className="brand">Khaloufi Fares</div>
         <nav className="nav">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
@@ -62,11 +62,11 @@ function App() {
       <main>
         <section className="hero">
           <div className="hero-copy">
-            <span className="eyebrow">Developer • Problem Solver • Creator</span>
-            <h1>Building clean digital experiences with purpose.</h1>
+            <span className="eyebrow">Web Developer • Frontend • Full-Stack Growth</span>
+            <h1>Building clean, practical, and modern digital experiences.</h1>
             <p>
-              I’m a web developer focused on crafting responsive interfaces, scalable apps,
-              and practical solutions that look professional and work smoothly.
+              I’m Khaloufi Fares, a web developer focused on creating responsive interfaces,
+              clean code, and useful applications that work well for real users.
             </p>
             <div className="cta-group">
               <a className="primary-btn" href="#projects">
@@ -79,19 +79,19 @@ function App() {
           </div>
 
           <div className="hero-card">
-            <div className="card-badge">Available for work</div>
+            <div className="card-badge">Open to opportunities</div>
             <div className="stat-grid">
               <div>
                 <strong>4+</strong>
-                <span>Project ideas</span>
+                <span>Project concepts</span>
               </div>
               <div>
                 <strong>JS</strong>
                 <span>Core stack</span>
               </div>
               <div>
-                <strong>100%</strong>
-                <span>Focused</span>
+                <strong>UI</strong>
+                <span>Focus</span>
               </div>
             </div>
           </div>
@@ -106,22 +106,22 @@ function App() {
           <div className="about-grid">
             <div className="about-text">
               <p>
-                I enjoy building web applications that are intuitive, efficient, and visually
-                clean. My work focuses on frontend development, user experience, and creating
-                solutions that are practical for real users.
+                I enjoy building websites and web applications that are intuitive, efficient, and
+                visually polished. My work focuses on frontend development, responsive design, and
+                creating user-friendly digital experiences.
               </p>
               <p>
-                I’m continuously developing my skills in modern web technologies, UI design,
-                and full-stack workflows to improve both the quality and impact of my work.
+                I’m continuously improving my skills in JavaScript, HTML, CSS, databases, and web
+                technologies to become a stronger and more complete developer.
               </p>
             </div>
 
             <div className="mini-panel">
-              <h3>Core strengths</h3>
+              <h3>Strengths</h3>
               <ul>
-                <li>Responsive interfaces</li>
-                <li>Modern JavaScript workflows</li>
-                <li>Clean project organization</li>
+                <li>Responsive web design</li>
+                <li>Clean coding practices</li>
+                <li>Database basics</li>
                 <li>GitHub portfolio presentation</li>
               </ul>
             </div>
@@ -131,7 +131,7 @@ function App() {
         <section id="skills" className="section">
           <div className="section-heading">
             <span>Skills</span>
-            <h2>Tools and technologies I use.</h2>
+            <h2>Technologies and tools I use.</h2>
           </div>
 
           <div className="skills-grid">
@@ -146,7 +146,7 @@ function App() {
         <section id="projects" className="section">
           <div className="section-heading">
             <span>Projects</span>
-            <h2>Selected work and portfolio highlights.</h2>
+            <h2>Portfolio highlights.</h2>
           </div>
 
           <div className="projects-grid">
@@ -162,7 +162,9 @@ function App() {
                     <span key={item}>{item}</span>
                   ))}
                 </div>
-                <a href={project.link}>View project</a>
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  View project
+                </a>
               </article>
             ))}
           </div>
@@ -170,13 +172,13 @@ function App() {
       </main>
 
       <footer id="contact" className="footer">
-        <h2>Let’s build something meaningful.</h2>
+        <h2>Let’s connect and build something valuable.</h2>
         <div className="footer-links">
-          <a href="mailto:your-email@example.com">Email</a>
+          <a href="mailto:khalloufi.fares@gmail.com">Email</a>
           <a href="https://github.com/f-khalloufi" target="_blank" rel="noreferrer">
             GitHub
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/fares-khalloufi-2b727112a/" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
         </div>
