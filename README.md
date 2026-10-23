@@ -4,7 +4,7 @@ Web Developer focused on building responsive, practical, and modern web experien
 
 ## About Me
 
-I am a developer who enjoys turning ideas into useful digital products. I focus on frontend development, clean code, responsive design, and building applications that are simple, functional, and visually polished.
+I am a juniore developer who enjoys turning ideas into useful digital products. I focus on frontend development, clean code, responsive design, and building applications that are simple, functional, and visually polished.
 
 I am continuously improving my skills in JavaScript, HTML, CSS, databases, and web development to create better user experiences and stronger projects.
 
